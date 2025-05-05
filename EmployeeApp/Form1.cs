@@ -24,7 +24,7 @@ namespace EmployeeApp
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -44,12 +44,29 @@ namespace EmployeeApp
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            L_Password.PasswordChar = L_ShowPass.Checked ? '\0' : '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            RegisterForm regForm = new RegisterForm();
+            regForm.Show();
+            this.Hide();
         }
     }
 }
